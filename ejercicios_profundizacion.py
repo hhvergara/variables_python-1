@@ -34,6 +34,25 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    print('Ingrese el primer número decimal a operar:')
+    numero_1 = float(input())
+    print("numero ingresado", numero_1)
+
+    print('Ingrese el segundo número decimal a operar:')
+    numero_2 = float(input())
+    print("numero ingresado", numero_2)
+
+    suma = numero_1 + numero_2
+    resta = numero_1 - numero_2
+    division = numero_1 / numero_2
+    multiplicacion = numero_1 * numero_2
+    potencia = numero_1**numero_2
+    print("la suma entre", numero_1, "y", numero_2, "da un total de", suma)
+    print("la resta entre", numero_1, "y", numero_2, "da un total de", resta)
+    print("la division entre", numero_1, "y", numero_2, "da un total de", division)
+    print("la multiplicacion entre", numero_1, "y", numero_2, "da un total de", multiplicacion)
+    print("la potencia entre", numero_1, "y", numero_2, "da un total de", potencia)
+
 
 
 def ej2():
@@ -55,6 +74,17 @@ def ej2():
       entienda de que se está hablando.
 
     '''
+    print('Ingrese su nombre/s y apellido:')
+    nombre = str(input())
+    print('Ingrese su DNI:')
+    dni = int(input())
+    print('Ingrese su edad:')
+    edad = int(input())
+    print('Ingrese su altura:')
+    altura = float(input())
+
+    print("el nombre es", nombre, "y el documento", dni)
+    print("su altura es", edad, "y el documento", altura)
 
 
 def ej3():
@@ -89,6 +119,21 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
+    print('Ingrese el nombre y apellido de su padre:')
+    nombre_padre = str(input())
+    print('Ingrese el nombre y apellido de su madre:')
+    nombre_madre = str(input())
+    print('Ingrese su nombre:')
+    nombre_hijo = str(input())
+
+    nombre_padre.split(" ")
+    nombre_madre.split(" ")
+
+    name_padre,surname_padre = nombre_padre.split(" ")
+    name_madre,surname_madre = nombre_madre.split(" ")
+
+    print("su nombre completo es:", nombre_hijo,surname_padre,surname_madre)
+
 
 
 def ej4():
@@ -123,6 +168,21 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    print('Ingrese el primer nombre y apellido:')
+    nombre_1 = str(input())
+    print('Ingrese el segundo nombre y apellido:')
+    nombre_2 = str(input())
+    
+    nombre_1.split(" ")
+    nombre_2.split(" ")
+
+    name_1,surname_1 = nombre_1.split(" ")
+    name_2,surname_2 = nombre_2.split(" ")
+
+    if surname_1 == surname_2:
+      print("Existe parentezco")
+    else:
+      print("no hay parentezco")
 
 
 def ej5():
@@ -149,12 +209,18 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
+    print('Ingrese su nombre y apellido completo:')
+    nombre_completo = str(input())
+
+    print(nombre_completo.lower())
+    print(nombre_completo.upper())
+    print(nombre_completo.capitalize())
 
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    ej2()
+    ej3()
+    ej4()
+    ej5()
