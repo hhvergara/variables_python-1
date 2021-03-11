@@ -25,10 +25,9 @@ def ej1():
     # Almacenar el valor de la suma en una variable
     # ej:
     # operacion = .....
-
+    resultado = numero_1 + numero_2
     # Imprimir en pantalla el resultado de la suma
-    # print(....)
-
+    print(resultado)
     # Repita el procedimiento para realizar la resta
 
 
@@ -42,7 +41,7 @@ def ej2():
 
     print('Ingrese el segundo número decimal a operar:')
     numero_2 = int(input())
-
+    
     # Alumno: Imprima en pantalla los dos números decimales solicitados
     # print(....)
 
@@ -118,7 +117,7 @@ def ej5():
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     ej1()
-    # ej2()
+    ej2()
     # ej3()
     # ej4()
     # ej5()
