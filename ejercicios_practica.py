@@ -31,6 +31,7 @@ def ej1():
 
     # Repita el procedimiento para realizar la resta
 
+    # realizamos la suma
 
 def ej2():
     # Ejercicios de práctica numérica
