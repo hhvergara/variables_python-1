@@ -32,6 +32,17 @@ def ej1():
     # Repita el procedimiento para realizar la resta
 
     # realizamos la suma
+    suma = numero_1 + numero_2
+
+    # Imprimimos resultado
+    print ('El resultado de la suma es:' , suma)
+
+    # realizamos la resta
+    resta = numero_1 - numero_2
+
+    # Imprimimos el resulado
+    print ('El resultado de la resta es:', resta)
+
 
 def ej2():
     # Ejercicios de práctica numérica
@@ -53,13 +64,32 @@ def ej2():
     # El resultado de sumar 4 y 2 es 6
     # NOTA: No coloque usted los nùmeros y resultados, use las variables
 
+    # Imprimo en pantalla los numeros ingresados
+    print('El primer numero ingresado es:', numero_1)
+    
+    print('El segundo numero ingresado es:', numero_2)
+
     # Suma
-
+    suma = numero_1 + numero_2
+    
     # Resta
+    resta = numero_1 - numero_2
+    
+    # Division
+    division = numero_1 / numero_2
+    
+    # Multiplicacion
+    multiplicacion = numero_1 * numero_2
 
-    # División
+    # Impresion de resultados
+    print ('El resultado de sumar', numero_1, 'y', numero_2, 'es:', suma)
+    
+    print ('El resultado de restar', numero_1, 'y', numero_2, 'es:', resta)
+    
+    print ('El resultado de dividir', numero_1, 'y', numero_2, 'es:', division)
+    
+    print ('El resultado de multiplicar', numero_1, 'y', numero_2, 'es:', multiplicacion)
 
-    # Multiplicación
 
 
 def ej3():
@@ -74,6 +104,15 @@ def ej3():
     apellido = str(input())
 
     # Imprima su nombre completo
+    nombre_completo = nombre +' '+ apellido
+    print ('Su nombre completo es:', nombre_completo)
+
+    # Cantidad de caracteres
+    nombre_completolen = len(nombre_completo)
+    print('Su nombre completo tiene:',nombre_completolen,'caracteres')
+
+
+
 
     # Almacenar su nombre completo en una variable
     # nombre_completo = .....
@@ -99,6 +138,12 @@ def ej4():
     # Ejemplo: Alumbrado, barrido y limpieza --> ABL
     # Imprimir el resultado en pantalla
 
+    letra_1 = palabra_1[0]
+    letra_2 = palabra_2[0]
+    letra_3 = palabra_3[0]
+
+    print('El acronimo de sus palabras es:', letra_1, letra_2, letra_3)
+
 
 def ej5():
     # Ejemplos variables de texto
@@ -115,11 +160,18 @@ def ej5():
     # Formar una nueva palabra con los recortes solicitados
     # Imprima en pantalla los resultados
 
+    primeras_3 = palabra_1[:3]
+    ultimas_3 = palabra_2[-3:]
+    nueva_palabra = primeras_3 + ultimas_3
+    print('La nueva palabra es:', nueva_palabra)
+
+
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
+    # ej1()
     # ej2()
     # ej3()
     # ej4()
     # ej5()
+    
