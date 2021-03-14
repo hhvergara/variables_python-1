@@ -151,7 +151,10 @@ def ej5():
     
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
     print(palabra_2[3:])
-    
+    # Inovetip: En esta línea tomas el rango desde el tercer caracter hacia adelante, 
+    # tendrías que usar en realidad print(palabra_2[-3:]) para obtener las últimas tres, de esa manera te
+    # independisas del tamaño de la palabra.
+        
     # Formar una nueva palabra con los recortes solicitados
     palabra_nueva= palabra_1[0] + palabra_1[1] + palabra_1[2]+ palabra_2[3:]
     
