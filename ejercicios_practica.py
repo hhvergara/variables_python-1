@@ -142,6 +142,9 @@ def ej5():
     # Imprima en pantalla los resultados
 
     combineta = palabra_1[0:3]+palabra_2[2:6]
+    # Inovetipo: Excelente! una forma de tomar las últimas 3 letras es usando
+    # palabra_2[-3:] de esta manera no importa cuantos caracteres tenga tu palabra, siempre va 
+    # tomar las ultimas 3.
     print(combineta)
 
 if __name__ == '__main__':
