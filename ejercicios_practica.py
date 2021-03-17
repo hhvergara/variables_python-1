@@ -5,7 +5,6 @@ Ejercicios de práctica
 ---------------------------
 Autor: Inove Coding School
 Version: 1.5
-
 Descripcion:
 Programa creado para poner a prueba los conocimientos
 adquiridos durante la clase
@@ -14,6 +13,7 @@ adquiridos durante la clase
 __author__ = "Inove Coding School"
 __email__ = "alumnos@inove.com.ar"
 __version__ = "1.5"
+
 
 def ej1():
     # Ejercicios de práctica numérica
@@ -25,11 +25,16 @@ def ej1():
     # Almacenar el valor de la suma en una variable
     # ej:
     # operacion = .....
+    operacion_suma = numero_1 + numero_2
+    print('El resultado de la suma de', numero_1, 'y', numero_2, 'es', operacion_suma)
+    
 
     # Imprimir en pantalla el resultado de la suma
     # print(....)
 
     # Repita el procedimiento para realizar la resta
+    operacion_resta = numero_1 - numero_2
+    print('El resultado de la resta de', numero_1, 'y', numero_2, 'es', operacion_resta)
 
 
 def ej2():
@@ -53,12 +58,19 @@ def ej2():
     # NOTA: No coloque usted los nùmeros y resultados, use las variables
 
     # Suma
-
+    print('El numero elegido es', numero_2)
+    suma = numero_1 + numero_2
+    print('el resultado de la suma de', numero_1, 'y', numero_2, 'es',suma)
     # Resta
-
+    resta = numero_1 - numero_2
+    print('el resultado de la resta de', numero_1, 'y', numero_2, 'es', resta)
     # División
-
+    division = numero_1 / numero_2
+    print('el resultado de la division de', numero_1, 'y', numero_2, 'es', division)
     # Multiplicación
+    multiplicacion = numero_1 * numero_2
+    print('el resultado de la multiplicacion de', numero_1, 'y', numero_2, 'es', multiplicacion)
+  
 
 
 def ej3():
@@ -79,6 +91,11 @@ def ej3():
 
     # Imprimir la cantidad de letras que posee su nombre completo
 
+    nombre_completo = nombre.capitalize() + ' ' + apellido.capitalize()
+    print(nombre_completo)
+    letras = len(nombre_completo)
+    print(nombre_completo, 'posee', letras-1, 'letras')
+
 
 def ej4():
     # Ejemplos variables de texto
@@ -86,17 +103,24 @@ def ej4():
     # Ingrese tres palabras y arme un acrónimo con ellas
     # Si desea puede modificar el código para ingresar más palabras
     print('Ingrese palabra 1:')
-    palabra_1 = str(input())
+    palabra1 = str(input())
 
     print('Ingrese palabra 2:')
-    palabra_2 = str(input())
+    palabra2 = str(input())
 
     print('Ingrese palabra 3:')
-    palabra_3 = str(input())
+    palabra3 = str(input())
 
     # De cada palabra debe tomar la primera letra y armar el acrónimo
     # Ejemplo: Alumbrado, barrido y limpieza --> ABL
     # Imprimir el resultado en pantalla
+
+    print('Ingrese palabra 4:')
+    palabra4 = str(input())
+    # coloque concatenador + para que en la sigla salgan los acronimos juntos, 
+    # porque con coma(,) separa la sigla a armar con un espacio
+    print('La union de acronimos forma la sigla', palabra1[0].capitalize()
+    +palabra2[0].capitalize()+palabra3[0].capitalize()+palabra4[0].capitalize())
 
 
 def ej5():
@@ -114,11 +138,13 @@ def ej5():
     # Formar una nueva palabra con los recortes solicitados
     # Imprima en pantalla los resultados
 
+   NuevaPalabra= palabra_1[0:3]+palabra_2[2:6]
+    print(NuevaPalabra)
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    ej2()
+    ej3()
+    ej4()
+    ej5()
