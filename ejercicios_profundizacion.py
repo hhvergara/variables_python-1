@@ -154,7 +154,7 @@ def ej4():
     Les dejamos un link con algunos ejemplos más:
     https://www.pythonforbeginners.com/dictionary/python-split
 
-    Cualquier duda con el método split pueden consultarla por el campus
+    Cualquier duda con el método split pueden consultarla por el campus dd
     '''
     print("modulo 2 ejercicio profundizacion 4")
     print("ingrese el nombre  y apellido de la primera persona:")
