@@ -32,10 +32,19 @@ def ej1():
       la operación realizada en cada caso y con que números
       se ha realizado la operación
       ej: La suma entre 4.2 y 6.5 es 10.7
+      '''
+      print("modulo 2 ejercicio profundizacion 1")
+      print("ponga su primer numero con 1 decimal")
+      numero_1 float(input ())
+      print("ponga su segundo numero con 1 decimal")
+      numero_2 float(input ())
+      print("la suma entre",numero_1, "y" ,numero_2,"es",numero_1 + numero_2)
+      print("la resta entre",numero_1, "y" ,numero_2, "es ,numero_1 - numero_2)
+      print("la multiplicacion entre",numero_1, "y" ,numero_2, "es" , numero_1 * numero_2)
+      print("la division entre" ,numero_1, "y" ,numero_2, "es" ,numero_1 / numero_2)
+      print(el exponente entre" ,numero_1, "y" ,numero_2, "es" ,numero_1 ** numero_2)
 
-    '''
-
-
+    
 def ej2():
     print('Ejercicios de práctica numérica y cadenas')
     '''
@@ -55,7 +64,17 @@ def ej2():
       entienda de que se está hablando.
 
     '''
-
+    print("modulo 2 ejercicio profundizacion 2")
+    print("ingresa nombre:")
+    nombre = str (input())
+    print("ingrese su DNI:")
+    DNI = int (input())
+    print("ingrese su edad:")
+    edad = int (input ())
+    print("ingrese su altura:")
+    altura =  (input ())
+    print("nombre completo:",nombre,"dni:",DNI)
+    print("su edad es:",edad,"su altura es:"altura,)
 
 def ej3():
     print('Ejercicios de práctica con cadenas')
@@ -89,6 +108,20 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
+    print("modulo 2 ejercicio profundizacion 3")
+    print("ingrese el nombre y apellido del padre:")
+    apellidodelpadre = str (input ())
+    cortedelpadre = apellidodelpadre.split()
+    finalapellido1 = cortepaterno [-1]
+    print("finalapellido1")
+    prin("ingrese el nombre y apellido de la madre:")
+    apellidomaterno = str (input ())
+    cortedelamadre = apellidodelamadre.split()
+    finalapellido2 = cortedelamadre[-1]
+    print("ingrese el nombre de pila")
+    nombrepila = str (input ())
+    print("su nombre completo es:",nombrepila,finalapellido1,finalapellido2)
+
 
 
 def ej4():
@@ -123,6 +156,21 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    print("modulo 2 ejercicio profundizacion 4")
+    print("ingrese el nombre  y apellido de la primera persona:")
+    primerape = str (input ())
+    apellido1 = apeprimero.split()
+    a=apellido1 [-1]
+    print("ingrese el nombre y apellido de la segunda persona")
+    segundoape = str (input ())
+    apellido2 = segundoape.split()
+    b=apellido2[-1]
+    if a=b
+    print("no es un famiiar")
+    else:
+    print(" es un familiar")
+  
+    
 
 
 def ej5():
@@ -142,19 +190,24 @@ def ej5():
     - capitalize
 
     Puede buscar en internet como usar en Python estos métodos.
-    Les dejamos el siguiente link que posee casos de uso de algunos de ellos:
+    Les dejamos el siguiente link que posee casos de uso de algunos de ellos
 
     Link de referencia:
     https://www.geeksforgeeks.org/isupper-islower-lower-upper-python-applications/
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
-
+    print("modulo 2 ejercicio profundizacion 5")
+    print("ingrese su nombre completo:")
+    nombre str (input ())
+    print(nombre.capitalize)()
+    print(nombre.upper)()
+    print(nombre.lower)()
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+     ej2()
+     ej3()
+     ej4()
+     ej5()
