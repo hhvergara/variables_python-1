@@ -169,7 +169,7 @@ b = apellido2[-1]
 if a == b:
     print  ("Es  un famiiar")
 else:
-    print("  no es un familiar")
+    print(" no es un familiar")
   
     
 
