@@ -1,0 +1,11 @@
+
+print ("modulo 2 ejercicio profundizacion 1")
+print ("ingrese un primer numero con 1 decimal")
+numero_1 = float(input())
+print("Ingrese segundo numero con 1 decimal")
+numero_2 = float(input())
+print("la suma de",numero_1, "y",numero_2 ,"es" ,numero_1+numero_2)
+print("la resta de",numero_1, "y",numero_2 ,"es" ,numero_1-numero_2)
+print("la multiplicacion de",numero_1, "y",numero_2 ,"es" ,numero_1*numero_2)
+print("la division de",numero_1, "y",numero_2 ,"es" ,numero_1/numero_2)
+print("la exponencializacion de ",numero_1, "y",numero_2 ,"es" ,numero_1**numero_2)    
