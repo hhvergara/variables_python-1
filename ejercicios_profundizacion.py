@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 '''
-Tipos de variables [Python]
+Tipos de variables [Python] ENEAS
 Ejercicios de profundización
 ---------------------------
 Autor: Inove Coding School
