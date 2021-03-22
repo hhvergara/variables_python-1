@@ -33,16 +33,16 @@ def ej1():
       se ha realizado la operación
       ej: La suma entre 4.2 y 6.5 es 10.7
       '''
-  print ("modulo 2 ejercicio profundizacion 1")
-  print ("ingrese un primer numero con 1 decimal")
-  numero_1 = float(input())
-  print("Ingrese segundo numero con 1 decimal")
-  numero_2 = float(input())
-  print("la suma de",numero_1, "y",numero_2 ,"es" ,numero_1+numero_2)
-  print("la resta de",numero_1, "y",numero_2 ,"es" ,numero_1-numero_2)
-  print("la multiplicacion de",numero_1, "y",numero_2 ,"es" ,numero_1*numero_2)
-  print("la division de",numero_1, "y",numero_2 ,"es" ,numero_1/numero_2)
-  print("la exponencializacion de ",numero_1, "y",numero_2 ,"es" ,numero_1**numero_2)    
+    print ("modulo 2 ejercicio profundizacion 1")
+    print ("ingrese un primer numero con 1 decimal")
+    numero_1 = float(input())
+    print("Ingrese segundo numero con 1 decimal")
+    numero_2 = float(input())
+    print("la suma de",numero_1, "y",numero_2 ,"es" ,numero_1+numero_2)
+    print("la resta de",numero_1, "y",numero_2 ,"es" ,numero_1-numero_2)
+    print("la multiplicacion de",numero_1, "y",numero_2 ,"es" ,numero_1*numero_2)
+    print("la division de",numero_1, "y",numero_2 ,"es" ,numero_1/numero_2)
+    print("la exponencializacion de ",numero_1, "y",numero_2 ,"es" ,numero_1**numero_2)    
 
     
 def ej2():
@@ -64,17 +64,17 @@ def ej2():
       entienda de que se está hablando.
 
     '''
-  print ("modulo 2 ejercicio profundizacion 2")
-  print("ingrese su nombre:")
-  nombre = str(input())
-  print("ingrese su DNI:")
-  DNI = int(input())
-  print("ingrese su altura:")
-  altura = float(input())
-  print("ingrese su edad:")
-  edad= int(input())
-  print("nombre completo:", nombre,"dni:",DNI)
-  print("su edad es",edad,"su altura es:",altura)
+    print ("modulo 2 ejercicio profundizacion 2")
+    print("ingrese su nombre:")
+    nombre = str(input())
+    print("ingrese su DNI:")
+    DNI = int(input())
+    print("ingrese su altura:")
+    altura = float(input())
+    print("ingrese su edad:")
+    edad= int(input())
+    print("nombre completo:", nombre,"dni:",DNI)
+    print("su edad es",edad,"su altura es:",altura)
 
 def ej3():
     print('Ejercicios de práctica con cadenas')
@@ -108,19 +108,25 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
-  print("modulo 2 ejercicio profundizacion 3")
-  print("ingrese el nombre y apellido del padre:")
-  apellidodelpadre = str (input ())
-  cortedelpadre = apellidodelpadre.split()
-  finalapellido1 = cortedelpadre [-1]
-  print("finalapellido1")
-  print("ingrese el nombre y apellido de la madre:")
-  apellidodelamadre = str (input ())
-  cortedelamadre = apellidodelamadre.split()
-  finalapellido2 = cortedelamadre[-1]
-  print("ingrese el nombre de pila")
-  nombrepila = str (input ())
-  print("su nombre completo es:",nombrepila,finalapellido1,finalapellido2)
+    print("modulo 2 ejercicio profundizacion 3")
+    print("ingrese el nombre y apellido del padre:")
+    
+    # Inovetip: acostumbrate a separar las palabras que usas para designar a tus variables con guión bajo:
+    # en vez de --> apellidodelpadre
+    # escribilo así --> apellido_paterno
+    # a la larga es más fácil de leer ;D
+    
+    apellidodelpadre = str (input ())
+    cortedelpadre = apellidodelpadre.split()
+    finalapellido1 = cortedelpadre [-1]
+    print("finalapellido1")
+    print("ingrese el nombre y apellido de la madre:")
+    apellidodelamadre = str (input ())
+    cortedelamadre = apellidodelamadre.split()
+    finalapellido2 = cortedelamadre[-1]
+    print("ingrese el nombre de pila")
+    nombrepila = str (input ())
+    print("su nombre completo es:",nombrepila,finalapellido1,finalapellido2)
 
 
 
@@ -159,17 +165,17 @@ def ej4():
     '''
     print("modulo 2 ejercicio profundizacion 4")        
     print("ingrese el nombre  y apellido de la primera persona:")
-primerape = str (input ())
-apellido1 = primerape.split()
-a = apellido1 [-1]
+    primerape = str (input ())
+    apellido1 = primerape.split()
+    a = apellido1 [-1]
     print("ingrese el nombre y apellido de la segunda persona")
-segundoape = str (input ())
-apellido2 = segundoape.split()
-b = apellido2[-1]
-if a == b:
-    print  ("Es  un famiiar")
-else:
-    print(" no es un familiar")
+    segundoape = str (input ())
+    apellido2 = segundoape.split()
+    b = apellido2[-1]
+    if a == b:
+        print  ("Es  un famiiar")
+    else:
+        print(" no es un familiar")
   
     
 
@@ -198,17 +204,17 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
-  print("modulo 2 ejercicio profundizacion 5")
-  print("ingrese su nombre completo:")
-  nombre = str(input())
-  print(nombre.capitalize())
-  print(nombre.upper())
-  print(nombre.lower())
+    print("modulo 2 ejercicio profundizacion 5")
+    print("ingrese su nombre completo:")
+    nombre = str(input())
+    print(nombre.capitalize())
+    print(nombre.upper())
+    print(nombre.lower())
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     ej1()
-     ej2()
-     ej3()
-     ej4()
-     ej5()
+    ej2()
+    ej3()
+    ej4()
+    ej5()
