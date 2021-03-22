@@ -137,8 +137,9 @@ def ej5():
     # De la segunda palabra tome las últimas tres letras, utilice el operador :
     # Formar una nueva palabra con los recortes solicitados
     # Imprima en pantalla los resultados
-
-   NuevaPalabra= palabra_1[0:3]+palabra_2[2:6]
+    # Inovetip: en la línea de abajo, le falta un espacio en el indentado :D
+   NuevaPalabra= palabra_1[0:3]+palabra_2[2:6] # En esta línea, fijate que podes hacer palabra_1[0:3]+palabra_2[-3:] para que funcione
+    # para cualquier palabra :D
     print(NuevaPalabra)
 
 if __name__ == '__main__':
