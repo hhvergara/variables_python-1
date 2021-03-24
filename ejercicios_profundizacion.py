@@ -23,7 +23,6 @@ def ej1():
     Realice un calculadora, se ingresará por línea de comando dos
     números reales y se deberá calcular todas las operaciones entre ellos:
     - Suma
-    - Resta
     - Multiplicación
     - División
     - Exponente/Potencia
@@ -34,6 +33,64 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    # Realizamos la operacion suma
+    print('Ingrese el primer numero a sumar:')
+    primer_numero = int(input())
+
+    print('Ingrese segundo numero a sumar:')
+    segundo_numero = int(input())
+
+    suma = primer_numero + segundo_numero
+
+    print('La suma entre el numero', primer_numero,
+          'y', segundo_numero, 'es:', suma)
+
+  	# Realizamos la operacion resta
+
+    print('Ingrese el primer numero a restar:')
+    primer_numero = int(input())
+
+    print('Ingrese segundo numero a restar:')
+    segundo_numero = int(input())
+
+    resta = primer_numero - segundo_numero
+
+    print ('La resta entre el numero', primer_numero, 'y', segundo_numero, 'es:', resta)
+    
+    # Realizamos la operacion multiplicacion
+    print('Ingrese el primer numero a multiplicar:')
+    primer_numero = int(input())
+
+    print('Ingrese segundo numero a multiplicar:')
+    segundo_numero = int(input())
+
+    multiplicacion = primer_numero * segundo_numero
+
+    print ('La multiplicacion entre el numero', primer_numero, 'y', segundo_numero, 'es:', multiplicacion)
+    
+    # Realizamos la operacion division
+
+    print('Ingrese el primer numero a dividir:')
+    primer_numero = int(input())
+
+    print('Ingrese segundo numero o divisor:')
+    segundo_numero = int(input())
+
+    division = primer_numero / segundo_numero
+
+    print ('La division entre el numero', primer_numero, 'y', segundo_numero, 'es:', division)
+
+   # Realizamos la operacion potenciacion
+
+    print('Ingrese el primer numero a exponenciar:')
+    primer_numero = int(input())
+
+    print('Ingrese segundo numero o exponente:')
+    segundo_numero = int(input())
+
+    potenciacion = primer_numero ** segundo_numero
+
+    print ('La potenciacion entre el numero', primer_numero, 'elevado a la', segundo_numero, 'es:', potenciacion)
 
 
 def ej2():
@@ -55,6 +112,26 @@ def ej2():
       entienda de que se está hablando.
 
     '''
+    # Solicitamos los datos de la persona en los formatos establecidos
+    print('Ingrese su nombre :')
+    nombre = str(input())
+    print('Ingrese su apellido:')
+    apellido = str(input())
+    nombre_completo = nombre + ' ' + apellido
+    print('Ingrese su numero de DNI:')
+    numero_dni = int(input())
+    print('Ingrese su edad:')
+    edad = int(input())
+    print('Ingrese su altura:')
+    altura = float(input())
+
+    # Mostramos en consola los datos solicitados
+
+    print('Su nombre completo es:', nombre_completo, 'y su DNI es:', numero_dni)
+    print('Su nombre completo es:', nombre_completo, 'su edad es', edad, 'años', 'y su altura es', altura,'cms')
+
+
+
 
 
 def ej3():
@@ -89,6 +166,21 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
+    # Solicitamos ingrese nombre del primer padre y le asignamos el primer apellido
+    print('Ingrese nombre y apellido de su padre')
+    nombre_paterno = str(input())
+    nombre_padre, apellido_padre = nombre_paterno.split(' ')
+
+    # Solicitamos ingrese nombre del segundo padre y le asignamos el segundo apellido
+    print('Ingrese el nombre y apellido de su madre')
+    nombre_materno = str(input())
+    nombre_madre, apellido_madre = nombre_materno.split(' ')
+    
+    # Solicitamos los nombres del hijo
+    print('Ingrese su/s nombre/s:')
+    nombre_hijo = str(input())
+    # Mostramos en consola el resultado de los apellidos asignados
+    print('Su nombre y apellidos completos son:', nombre_hijo,'', apellido_padre,'', apellido_madre)
 
 
 def ej4():
@@ -123,6 +215,21 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    # Solicitamos se ingrese el nombre de las personas y definimos que tome unicamente el apellido de cada una
+    print('Ingrese el nombre y apellido de la primer persona:')
+    primer_persona = str(input())
+    # Definimos que tome el apellido ingresado
+    nombre_primera, apellido_primera = primer_persona.split(' ')
+
+    print('Ingrese el nombre y apellido de la segunda persona')
+    segunda_persona = str(input())
+
+    # Establecemos sentencia condicional si esta contenido en apellido
+    if apellido_primera in segunda_persona:
+      print('Son parientes')
+    # Establecemos sentencia condicional si no esta contenido
+    else:
+      print('No son parientes')
 
 
 def ej5():
@@ -150,10 +257,26 @@ def ej5():
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
 
+    # Solicitamos se ingrese nombre completo
+    print('Ingrese su/s nombre/s y apellido/s completos:')
+    nombre_completo = str(input())
+
+    # Establecemos variable para minuscula
+    nombre_minuscula = str.lower(nombre_completo)
+    print('Su nombre completo en minusculas es:', nombre_minuscula)
+
+    # Establecemos variable para mayusculas
+    nombre_mayuscula = str.upper(nombre_completo)
+    print('Su nombre completo en mayusculas es:', nombre_mayuscula)
+
+    # Establecemos variable para primer letra en mayuscula
+    nombre_1mayuscula = str.capitalize(nombre_completo)
+    print('Su nombre completo con la primer letra es mayusculas es:', nombre_1mayuscula)
+
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    # ej1()
     # ej2()
     # ej3()
     # ej4()
