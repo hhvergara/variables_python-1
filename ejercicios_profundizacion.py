@@ -17,9 +17,9 @@ __version__ = "1.3"
 
 
 def ej1():
-  # Ejercicios de práctica con números
-  print('Nuestra primera calculadora')
-  '''
+    # Ejercicios de práctica con números
+    print('Nuestra primera calculadora')
+    '''
     Realice un calculadora, se ingresará por línea de comando dos
     números reales y se deberá calcular todas las operaciones entre ellos:
     - Suma
@@ -32,28 +32,27 @@ def ej1():
       la operación realizada en cada caso y con que números
       se ha realizado la operación
       ej: La suma entre 4.2 y 6.5 es 10.7
-
     '''
-  print('Ingrese el primer número a operar:')
-  numero_1 = int(input())
+    print('Ingrese el primer número a operar:')
+    numero_1 = int(input())
 
-  print('Ingrese el segundo número a operar:')
-  numero_2 = int(input())
+    print('Ingrese el segundo número a operar:')
+    numero_2 = int(input())
 
-  def operacion():
-    suma= numero_1 + numero_2
-    resta= numero_1 - numero_2
-    Multiplicacion= numero_2 * numero_2
-    division= numero_1 / numero_2
-    potencia= numero_1 ** numero_2
+    def operacion():
+      suma = numero_1 + numero_2
+      resta = numero_1 - numero_2
+      Multiplicacion = numero_2 * numero_2
+      division = numero_1 / numero_2
+      potencia = numero_1 ** numero_2
 
-    print ("El resultado de la suma entre",numero_1, "y", numero_2, "es:",suma)
-    print ("El resultado de la resta entre",numero_1, "y", numero_2, "es:",resta)
-    print ("El resultado de la multilicacion entre",numero_1, "y", numero_2, "es:", Multiplicacion)
-    print("El resultado de la division entre",numero_1, "y", numero_2, "es:",division)
-    print ("El resultado de la potencia entre",numero_1, "y", numero_2, "es:",potencia)
+      print("El resultado de la suma entre", numero_1, "y", numero_2, "es:", suma)
+      print("El resultado de la resta entre", numero_1, "y", numero_2, "es:", resta)
+      print("El resultado de la multilicacion entre", numero_1, "y", numero_2, "es:", Multiplicacion)
+      print("El resultado de la division entre", numero_1, "y", numero_2, "es:", division)
+      print("El resultado de la potencia entre", numero_1, "y", numero_2, "es:", potencia)
 
-  operacion()
+    operacion()
   
 
 
@@ -74,8 +73,8 @@ def ej2():
       altura de la persona
       Nuevamente debe aclarar el campo de cada uno, para el que lo lea
       entienda de que se está hablando.
-
     '''
+    
     print('Indique su Nombre Completo:')
     nombre_completo = str(input())
     
@@ -97,38 +96,6 @@ def ej2():
 
 
 def ej3():
-    print('Ejercicios de práctica con cadenas')
-    print("_______________O______________________\n")
-
-
-
-    print ("Puede indicar el nombre completo de su padre?\n")
-    nombre_pa = str (input())
-
-    print("y puede indicar el nombre de su madre?\n")
-    nombre_ma = str (input())
-
-    print("Gracias, ahora indiquenos su nombre:\n")
-    mi_nombre = str (input())
-
-    print("", "1. Nombre del Padre:"" "+ nombre_pa + "\n 2. Nombre de la madre:"" "+ nombre_ma + "\n 3. Su nombre es:"" " + mi_nombre )
-    print("________________________O_______________________\n")
-
-    nomb, segnom, ape1,ape2 = nombre_pa.split()
-    
-    print ("Ape pa:",ape1,ape2)
-
-    nombma,segnombma, ape1ma = nombre_ma.split()
-    
-    print ("Ape ma:", ape1ma)
-    print("______________O____________\n")
-
-    mi_nomb_completo= (mi_nombre +str(" ")+ ape1 + str(" ") + ape2 + str(", ") + ape1ma)
-
-    print("Mi nombre completo es:", mi_nomb_completo)
-
-
-
     '''
     Realice un programa que determine cual sería el apellido de una persona
     si se ingresaran los dos nombres completos de sus padres.
@@ -160,6 +127,39 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
+    print('Ejercicios de práctica con cadenas')
+    print("_______________O______________________\n")
+
+
+
+    print("Puede indicar el nombre completo de su padre?\n") 
+    # Inovetip: La función print tiene seteado por defecto para que utilice \n no hace falta agregarlo.
+    nombre_pa = str (input())
+
+    print("y puede indicar el nombre de su madre?\n")
+    nombre_ma = str (input())
+
+    print("Gracias, ahora indiquenos su nombre:\n")
+    mi_nombre = str (input())
+
+    print("", "1. Nombre del Padre:"" "+ nombre_pa + "\n 2. Nombre de la madre:"" "+ nombre_ma + "\n 3. Su nombre es:"" " + mi_nombre )
+    print("________________________O_______________________\n")
+
+    nomb, segnom, ape1,ape2 = nombre_pa.split()
+    
+    print ("Ape pa:",ape1,ape2)
+
+    nombma, segnombma, ape1ma = nombre_ma.split()
+    
+    print ("Ape ma:", ape1ma)
+    print("______________O____________\n")
+
+    mi_nomb_completo = (mi_nombre +str(" ") + ape1 + str(" ") + ape2 + str(", ") + ape1ma)
+    # En estos casos también lo podes hacer así:
+    # f'{mi_nombre} {ape1} {ape2}, {ape1ma}'
+    # Queda mas corto y se lee mejor.
+    
+    print("Mi nombre completo es:", mi_nomb_completo)
 
 
 def ej4():
