@@ -108,7 +108,7 @@ def ej3():
     print ('Su nombre completo es:', nombre_completo)
 
     # Cantidad de caracteres
-    nombre_completolen = len(nombre_completo)
+    nombre_completolen = len(nombre_completo) # Inovetip --> OJO que el caracter " " cuenta.
     print('Su nombre completo tiene:',nombre_completolen,'caracteres')
 
 
